@@ -1,4 +1,4 @@
-SwingTableModel
+AnnotationTableModel
 ===============
 
 This is a customizable generic table model class which can be used to convert a POJO to a JTable with the aid of annotations.
@@ -15,13 +15,13 @@ import com.swing.table.ColumnName;
 
 public class Customer {
 
-	@ColumnName(name = "Customer ID")
+	@ColumnName(i18nKey = "Customer ID")
 	private int id;
-	@ColumnName(name = "Customer Name")
+	@ColumnName(i18nKey = "Customer Name")
 	private String name;
-	@ColumnName(name = "Contact Number")
+	@ColumnName(i18nKey = "Contact Number")
 	private String contact;
-	@ColumnName(name = "Email")
+	@ColumnName(i18nKey = "Email")
 	private String email;
 
 	public Customer(int id, String name, String contact) {
@@ -72,8 +72,6 @@ public class Customer {
 
 ```
 The table will look like the one below:
-
-![Generated table](https://github.com/sewdil/SwingTableModel/blob/master/images/exampleTable.jpg?raw=true)
 
 ##Example Usage:
 
